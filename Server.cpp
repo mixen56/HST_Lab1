@@ -84,6 +84,9 @@ int read_matrix_from_file(string file_name, string &full_file) {
         exit(1);
     }
 
+    // remove artifact
+    full_file.erase(full_file.size() - 1, 1);
+
     input_file.close();
     return 0;
 }

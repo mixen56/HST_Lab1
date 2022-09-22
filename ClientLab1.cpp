@@ -110,7 +110,8 @@ vector<buplas::matrix<double> >parse_input (string input,
     int input_size = input.size();
 
     cout << "[Client] Parse input ... "  <<  endl;
-    for (pos; pos < input_size; pos++) {
+    //for (pos; pos < input_size; pos++) {
+    while (pos < input_size) {
         // create matrix
         buplas::matrix<double> matrix(size,size);
 
